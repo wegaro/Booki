@@ -3,46 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booki</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/stylesheet.css" rel="stylesheet" type="text/css">
-  <script src="https://kit.fontawesome.com/57498250a3.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/57498250a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Header & navigation bar -->
   <header>
-    <div class="logo">
-      <a href="#"><img src="/Users/wendygalvanromero/Documents/FirstProject/images/logo/Booki@3x.png" alt="Booki logo"></a>              
-    </div>
-        <!--Nav, could use flexbox for the positioning of logo and Acc/Act section-->
-      <nav> 
+      <a href="#"><img class="logo" src="images/logo/Booki@3x.png" alt="Booki logo"></a>               
+      <nav class="nav-container"> 
         <ul>
-          <li><a href="#Accommodations">Accommodations</a></li>
-          <li><a href="#Activities">Activities</a></li>
+          <li><a class="navacc-active" href="#accommodations">Accommodations</a></li>
+          <li><a class="navact-active" href="#activities">Activities</a></li>
         </ul>
       </nav>
   </header>
+  
+  <!-- Search bar -->
   <h3>Find a place for your dream vacation</h3>
   <p>Downtown or in nature</p>
   <div class="search">
-    <i class="fa-solid fa-location-dot"></i>
-    <input type="text" placeholder="Marseille, France">
-    <button type="submit">Search</button>
+    <form class="form">
+      <div class="location-pin">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <input type="text" placeholder="Marseille, France">
+      <button type="submit">Search</button>
+    </form>
   </div>
-      <!--Filter, use flexbox, flex-wrap-->
-  <div> 
-    <i class="fa-solid fa-money-bill-wave"> Low cost</i>
-    <i class="fa-solid fa-child-reaching"> Family-friendly</i>
-    <i class="fa-sharp fa-solid fa-heart"> Romantic</i>
-    <i class="fa-solid fa-dog"> Pets allowed</i>
-  </div>
-    <!--Insert small information "i" icon next to text-->
-    <p>More than 500 accommodations are available in this city</p>
-<section>
 
+  <!-- Filter, use flexbox, flex-wrap -->
+  <div class="Filters">
+    <h3>Filters</h3>
+    <button class="iconfilter"> 
+      <i class="fa-solid fa-money-bill-wave"> Low cost</i>
+    </button>
+    <button class="iconfilter">
+      <i class="fa-solid fa-child-reaching"> Family-friendly</i>
+    </button> 
+    <button class="iconfilter">
+      <i class="fa-sharp fa-solid fa-heart"> Romantic</i>
+    </button>
+    <button class="iconfilter">
+      <i class="fa-solid fa-dog"> Pets allowed</i> 
+    </button>
+  </div>
+    
+  <!-- Insert small information "i" icon next to text -->
+  <div class="information">
+    <i class="fas fa-info fa-xs info-icon"></i>
+    <p>More than 500 accommodations are available in this <br>city</p>
+  </div>
+
+  <!-- Accommodations section -->
+<section id="accommodations">
+  <p><h3>Accommodations in Marseille</h3></p>
+  <div class="container">
+    <!-- Card #1 -->  
+    <div>
+      <p>Auberge la Cannebière</p>
+    </div>
+    <!-- Card #2 -->  
+    <div>
+      <p>Hôtel du port</p>
+    </div>
+    <!-- Card #3 -->  
+    <div>
+      <p>Les mouettes Hotel</p>
+    </div>
+    <!-- Card #4 -->  
+    <div>
+      <p>Hôtel de la mer</p>
+    </div>
+    <!-- Card #5 -->
+    <div>
+      <p>Auberge Le Panier</p>
+    </div>
+    <!-- Card #6 -->  
+    <div>
+      <p>Hôtel chew Amina</p>
+    </div>
+  <p><h4>Show more</h4></p>
+  </div>
 </section>
 
+  <!-- Most popular section -->
+<aside class="most-popular">
+  <p><h3>Most popular</h3></p>
+    <!-- Card #1 -->  
+    <div>
+      <p>Morning Sun Hotel</p>
+    </div>
+    <!-- Card #2 -->  
+    <div>
+      <p>Au cœur de l'eau Bed and Breakfast</p>
+    </div>
+    <!-- Card #3 -->  
+    <div>
+      <p>Tout bleu et Blanc Hotel</p>
+    </div>
+</aside>
+
+<!-- Activities section -->
+<section id="activities">
+  <p><h3>Activities in Marseille</h3></p>
+    <!-- Card #1 -->  
+    <div>
+      <p>Old Port</p>
+    </div>
+    <!-- Card #2 -->  
+    <div>
+      <p>Pomègues Fort</p>
+    </div>
+    <!-- Card #3 -->  
+    <div>
+      <p>Frioul Island</p>
+    </div>
+    <!-- Card #4 -->  
+    <div>
+      <p>Calanques National Park</p>
+    </div>
+    <!-- Card #5 -->  
+    <div>
+      <p>Notre-Dame-de-la-Garde</p>
+    </div>
+    <!-- Card #6 -->  
+    <div>
+      <p>Longchamp Park</p>
+    </div>
+</section>
+
+<!-- Footer section -->  
+<footer>
+  <p class="about">
+  <h4>About</h4>
+    Site Map<br>
+    General Terms and Conditions<br>
+    Data and Privacy<br>
+  </p>
+
+
+  <p class="our-accommodations">
+    <h4>Our Accommodations</h4>
+    Quality Assessment<br>
+    You have a hotel?<br>
+  </p>
+  
+  <p class="assistance">
+    <h4>Assistance</h4>
+    Help Desk
+    Contact Us
+  </p>
+</footer>
 </body>
 </html>

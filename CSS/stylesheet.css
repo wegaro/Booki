@@ -1,53 +1,150 @@
 * {
-    margin: 0;
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    color: black;
 }
 
-body{
-    font-family: sans-serif;
+body { 
+    width: 100%;
+    margin: auto;
+    padding: 4px 50px 60px 50px;
 }
 
-a{
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
     text-decoration: none;
 }
 
-header{
+/* Header & navigation bar */
+header {
     display: flex;
-    height: 70px;
-    background-color: white;
     justify-content: space-between;
+    height: 100px;
+    background-color: white;
     align-items: center;
     padding: 10px;
 }
 
-.logo{
-    display: flex;
-}
 
-img{
+.logo {
     width: 100px;
-    height: 110;
+    height: 47px;
+    margin-left: -25px;
 }
 
-ul{
+ul {
     display: flex;
     list-style-type: none;
     margin-right: 40px;
 }
 
-li{
+
+li {
     font-size: 16px;
     margin: 0 15px;
 }
 
-a:visited{
-    color: rgb(110, 104, 104);
+.navacc-active, .navact-active {
+    padding: 40px 0px 0px 0px;
+    border-top: 2px solid transparent;
+    color: grey;
 }
 
-a:hover{
-    color: #0065FC;
+.navacc-active:hover, .navact-active:hover {
+    color: #0065fc;
+    border-color: #0065fc;
+    text-decoration: none;
 }
 
-a:active {
-    background-color: rgb(255, 0, 191);
+/* Search bar */
+
+.form {
+    display: flex;
+    margin-bottom: 10px;
 }
+
+.search {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px 0 20px 0;
+}
+
+.location-pin {
+    object-fit: cover;
+    padding: 15px 17px 15px 17px;
+    border-radius: 12px 0 0 12px;
+    background-color: #f2f2f2;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    padding: 5px;
+}
+
+button {
+    display: inline-block;
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 12px 12px 0px;
+    padding: 12px;
+    color: white;
+}
+
+/* Filter */
+
+.filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.iconfilter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    min-width: 100px;
+    border-radius: 50px;
+    border: 2px solid #f2f2f2;
+    background-color: #ffff;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+/* Information */
+.information {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0 20px 0;
+}
+
+.info-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    border: 2px solid #f2f2f2;
+    color: #0065fc;
+    padding-top: 3px;
+    text-align: center;
+    justify-items: center;
+}
+
+/* Accommodations section */
+/* Activities */
+/* Footer */
+/* Media query tablet */
+/* Media query mobile */
