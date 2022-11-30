@@ -1,7 +1,9 @@
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
 }
 
 body { 
@@ -11,7 +13,7 @@ body {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
@@ -24,7 +26,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: 100px;
-    background-color: white;
     align-items: center;
     padding: 10px;
 }
@@ -36,14 +37,14 @@ header {
     margin-left: -25px;
 }
 
-ul {
+.navbar {
     display: flex;
     list-style-type: none;
     margin-right: 40px;
 }
 
 
-li {
+.navbar-li {
     font-size: 16px;
     margin: 0 15px;
 }
@@ -51,16 +52,23 @@ li {
 .navacc-active, .navact-active {
     padding: 40px 0px 0px 0px;
     border-top: 2px solid transparent;
-    color: grey;
 }
 
 .navacc-active:hover, .navact-active:hover {
-    color: #0065fc;
-    border-color: #0065fc;
+    color: rgb(0, 101, 252);
+    border-color: rgb(0, 101, 252);
     text-decoration: none;
 }
 
 /* Search bar */
+.find-place {
+    font-size: 18px;
+}
+
+.downtown-nature{
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
 
 .form {
     display: flex;
@@ -71,79 +79,142 @@ li {
     display: flex;
     flex-direction: column;
     width: 20%;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 15px 0;
 }
 
 .location-pin {
     object-fit: cover;
     padding: 15px 17px 15px 17px;
     border-radius: 12px 0 0 12px;
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242);
 }
 
-input {
+.text-box {
     border: none;
     border-bottom: 1px solid #f2f2f2;
-    border-top: 1px solid #f2f2f2;
+    border-top: 1px solid rgb(242, 242, 242);
     padding: 5px;
+    font-weight: 700;
 }
 
-button {
+.search-button {
     display: inline-block;
     background-color: #0065fc;
     border: 1px solid #0065fc;
     border-radius: 0px 12px 12px 0px;
     padding: 12px;
     color: white;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 /* Filter */
 
 .filters {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
 }
 
-.iconfilter {
+.icon-filter {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 50px;
-    min-width: 100px;
+    justify-content: space-between;
     border-radius: 50px;
-    border: 2px solid #f2f2f2;
-    background-color: #ffff;
-    text-align: center;
-    font-weight: bold;
+    border: 2px solid rgb(242, 242, 242);
+    background-color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
-    cursor: pointer;
-    padding-right: 20px;
+    font-weight: bold;
+    height: 50px;
+    min-width: 100px;
     padding-left: 0px;
+    padding-right: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    color: rgb(0, 101, 252);
+    background-color: rgb(222, 235, 255);
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.icon-text {
+    margin-left: 10px;
 }
 
 /* Information */
 .information {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 10px;
-    padding: 20px 0 20px 0;
+    padding: 18px 0 20px 0;
 }
 
-.info-icon {
-    width: 22px;
-    height: 22px;
+.fa-info {
+    height: 25px;
+    width: 25px;
     border-radius: 50px;
-    border: 2px solid #f2f2f2;
-    color: #0065fc;
+    border: 2px solid rgb(242, 242, 242);
+    color: rgb(0, 101, 252);
     padding-top: 3px;
+    padding-left: 1px;
     text-align: center;
     justify-items: center;
+    font-size: 14px;
 }
 
 /* Accommodations section */
+
+.accommodations-title {
+    font-size: 18px;
+    background: rgb(242, 242, 242);
+}
+
+.container-accommodations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(242, 242, 242);
+    border-radius: 15px 15px 15px 15px;
+    padding: 5px 5px 0px 5px;
+    width: 900px;
+    height: 800px;
+}
+
+.accommodations-card {
+    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 280px;
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 5px 5px 0px 5px;
+
+}
+
+.accommodations-img {
+    width: 100%;
+    height: 140px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.blue-star {
+    color: rgb(0, 101, 252);
+}
+
+.gray-star {
+    color: rgb(228, 227, 227);
+}
+
+
 /* Activities */
 /* Footer */
 /* Media query tablet */

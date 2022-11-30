@@ -17,77 +17,120 @@
   <!-- Header & navigation bar -->
   <header>
       <a href="#"><img class="logo" src="images/logo/Booki@3x.png" alt="Booki logo"></a>               
-      <nav class="nav-container"> 
-        <ul>
-          <li><a class="navacc-active" href="#accommodations">Accommodations</a></li>
-          <li><a class="navact-active" href="#activities">Activities</a></li>
+      <nav> 
+        <ul class="navbar">
+          <li class="navbar-li"><a class="navacc-active" href="#accommodations">Accommodations</a></li>
+          <li class="navbar-li"><a class="navact-active" href="#activities">Activities</a></li>
         </ul>
       </nav>
   </header>
   
-  <!-- Search bar -->
-  <h3>Find a place for your dream vacation</h3>
-  <p>Downtown or in nature</p>
+  <!-- Search bar Do I need to put all this inside a container? (div)? -->
+  <h3 class="find-place">Find a place for your dream vacation</h3>
+  <p class="downtown-nature">Downtown or in nature</p>
   <div class="search">
     <form class="form">
       <div class="location-pin">
         <i class="fa-solid fa-location-dot"></i>
       </div>
-      <input type="text" placeholder="Marseille, France">
-      <button type="submit">Search</button>
+      <input class="text-box" type="text" placeholder="  Marseille, France">
+      <button class="search-button" type="submit">Search</button>
     </form>
   </div>
 
   <!-- Filter, use flexbox, flex-wrap -->
-  <div class="Filters">
+  <div class="filters">
     <h3>Filters</h3>
-    <button class="iconfilter"> 
-      <i class="fa-solid fa-money-bill-wave"> Low cost</i>
+    <button class="icon-filter"> 
+      <i class="fa-solid fa-money-bill-wave"></i><span class="icon-text">Low cost</span>
     </button>
-    <button class="iconfilter">
-      <i class="fa-solid fa-child-reaching"> Family-friendly</i>
+    <button class="icon-filter">
+      <i class="fa-solid fa-child-reaching"></i><span class="icon-text">Family-friendly</span>
     </button> 
-    <button class="iconfilter">
-      <i class="fa-sharp fa-solid fa-heart"> Romantic</i>
+    <button class="icon-filter">
+      <i class="fa-sharp fa-solid fa-heart"></i><span class="icon-text">Romantic</span>
     </button>
-    <button class="iconfilter">
-      <i class="fa-solid fa-dog"> Pets allowed</i> 
+    <button class="icon-filter">
+      <i class="fa-solid fa-dog"></i><span class="icon-text">Pets allowed</span> 
     </button>
   </div>
-    
+
   <!-- Insert small information "i" icon next to text -->
   <div class="information">
-    <i class="fas fa-info fa-xs info-icon"></i>
-    <p>More than 500 accommodations are available in this <br>city</p>
+    <i class="fa-solid fa-info"></i>
+    <p>More than 500 accommodations are available in this<br>city</p>
   </div>
 
   <!-- Accommodations section -->
 <section id="accommodations">
-  <p><h3>Accommodations in Marseille</h3></p>
-  <div class="container">
+  <p><h2 class="accommodations-title">Accommodations in Marseille</h2></p>
+  <br>
+  <div class="container-accommodations">
     <!-- Card #1 -->  
-    <div>
-      <p>Auberge la Cannebière</p>
+    <div class="accommodations-card">
+      <img class="accommodations-img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+      <h5>Auberge la Cannebière</h5>
+      <p>Night starting at 25€</p>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star gray-star"></i>
     </div>
     <!-- Card #2 -->  
-    <div>
-      <p>Hôtel du port</p>
+    <div class="accommodations-card">
+      <img class="accommodations-img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+      <h5>Hôtel du port</h5>
+      <p>Night starting at 52€</p>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
     </div>
     <!-- Card #3 -->  
-    <div>
-      <p>Les mouettes Hotel</p>
+    <div class="accommodations-card">
+      <img class="accommodations-img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
+      <h5>Les mouettes Hotel</h5>
+      <p>Night starting at 76€</p>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star gray-star"></i>
     </div>
     <!-- Card #4 -->  
-    <div>
-      <p>Hôtel de la mer</p>
+    <div class="accommodations-card">
+      <img class="accommodations-img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+      <h5>Hôtel de la mer</h5>
+      <p>Night starting at 46€</p>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star gray-star"></i>
+      <i class="fa-solid fa-star gray-star"></i>
     </div>
     <!-- Card #5 -->
-    <div>
-      <p>Auberge Le Panier</p>
+    <div class="accommodations-card">
+      <img class="accommodations-img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+      <h5>Auberge Le Panier</h5>
+      <p>Night starting at 23€</p>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star gray-star"></i>
     </div>
     <!-- Card #6 -->  
-    <div>
-      <p>Hôtel chew Amina</p>
+    <div class="accommodations-card">
+      <img class="accommodations-img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chew Amina">
+      <h5>Hôtel chew Amina</h5>
+      <p>Night starting at 96€</p>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
+      <i class="fa-solid fa-star blue-star"></i>
     </div>
   <p><h4>Show more</h4></p>
   </div>
