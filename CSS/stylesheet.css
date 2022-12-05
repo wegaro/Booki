@@ -62,7 +62,7 @@ header {
 
 /* Search bar */
 .find-place {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .downtown-nature{
@@ -119,14 +119,14 @@ header {
 
 .icon-filter {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    border-radius: 50px;
-    border: 2px solid rgb(242, 242, 242);
+    align-items: center;
     background-color: rgb(255, 255, 255);
-    text-decoration: none;
+    border: 2px solid rgb(242, 242, 242);
+    border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
+    text-decoration: none;
     height: 50px;
     min-width: 100px;
     padding-left: 0px;
@@ -172,50 +172,185 @@ header {
 
 /* Accommodations section */
 
-.accommodations-title {
-    font-size: 18px;
-    background: rgb(242, 242, 242);
+.accommodations-most-popular {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
 }
 
-.container-accommodations {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.accommodations-container {
+    width: 60%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 25px 25px 25px 25px;
+}
+
+.sections-title {
     background: rgb(242, 242, 242);
-    border-radius: 15px 15px 15px 15px;
-    padding: 5px 5px 0px 5px;
-    width: 900px;
-    height: 800px;
+    border-radius: 15px 15px 0px 0px;
+    border: solid rgb(242, 242, 242);
+    padding-bottom: -5px;
+}
+
+.title-text {
+    font-size: 22px;
+    background: rgb(242, 242, 242);
+    padding: 30px 0px  0px 39px;
+    line-height: 0px;
+}
+
+.accommodations-row {
+    background: rgb(242, 242, 242);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 25px 10px 25px;
+    align-content: center;
 }
 
 .accommodations-card {
     background: rgb(255, 255, 255);
-    width: 250px;
-    height: 280px;
+    width: 255px;
+    height: 220px;
     margin: 10px;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 16px 16px 16px 16px;
     padding: 5px 5px 0px 5px;
-
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .accommodations-img {
     width: 100%;
-    height: 140px;
+    height: 125px;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+.text-position {
+    margin-top: -12px;
+    line-height: 1px;
+    padding-left: 12px;
+}
+
+.price {
+    font-weight: 600;
 }
 
 .blue-star {
     color: rgb(0, 101, 252);
+    font-size: 14px;
 }
 
 .gray-star {
     color: rgb(228, 227, 227);
+    font-size: 14px;
 }
 
 
+.show-more {
+    font-weight: 700;
+    font-size: 18px;
+    background-color: rgb(242, 242, 242);
+    padding-left: 50px;
+    border-radius: 0px 0px 0px 25px;
+}
+
+.show-more:hover {
+    color: #0065fc;
+}
+/* Most popular section */
+
+.most-popular {
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #f2f2f2;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.popular-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.aside-title {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.black-star {
+    font-size: 18px;
+    padding-right: 50px;
+    padding-top: 20px;
+    background-color: #f2f2f2;
+}
+
+.popular-card {
+    display: flex;
+    width: 400px;
+    height: 160px;
+    border-radius: 16px 16px 16px 16px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.popular-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 16px 0px 0px 16px;
+    margin: 5px;
+    object-fit: cover; 
+}
+
+.popular-text {
+    padding-left: 12px;
+    line-height: 1px;
+}
+
+.popular-stars {
+    padding-top: 60px;
+}
+
+
+
+
 /* Activities */
+
+
+
+
 /* Footer */
-/* Media query tablet */
-/* Media query mobile */
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 5%;
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+}
+  
+  .footer-column {
+    background-color: rgb(242, 242, 242);
+  }
+  
+  .footer-title {
+    background-color: rgb(242, 242, 242);
+  }
+  .footer-text {
+    line-height: 10px;
+  }
+  
+  
+  
+  /* Media query tablet */
+  /* Media query mobile */
+  
