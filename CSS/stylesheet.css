@@ -2,6 +2,7 @@
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
+    color: black;
     font-size: 16px;
 }
 
@@ -11,7 +12,7 @@ body {
 }
 
 main {
-    padding: 4px 50px 30px 50px;
+    padding: 4px 65px 30px 65px;
 }
 
 
@@ -36,7 +37,7 @@ header {
 .logo {
     width: 100px;
     height: 47px;
-    margin-left: -25px;
+    margin-left: -10px;
 }
 
 .navbar {
@@ -52,7 +53,7 @@ header {
 }
 
 .navacc-active, .navact-active {
-    padding: 40px 0px 0px 0px;
+    padding: 35px 0px 0px 0px;
     border-top: 2px solid transparent;
 }
 
@@ -60,6 +61,47 @@ header {
     color: rgb(0, 101, 252);
     border-color: rgb(0, 101, 252);
     text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .navacc-active, .navact-active {
+        padding: 40px 0px 0px 0px;
+        border-top: none;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .navacc-active:hover, .navact-active:hover {
+        color: rgb(0, 101, 252);
+        border-color: rgb(0, 101, 252);
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 100px;
+        padding: 10px 10px 10px 55px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 47px;
+    }
+ 
+    .navacc-active, .navact-active {
+        padding: 40px 0px 0px 0px;
+        border-top: none;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .navacc-active:hover, .navact-active:hover {
+        color: rgb(0, 101, 252);
+        border-color: rgb(0, 101, 252);
+        text-decoration: none;
+    }
 }
 
 /* Search bar */
@@ -124,7 +166,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(242, 242, 242);
+    border: 3px solid rgb(242, 242, 242);
     border-radius: 50px;
     font-size: 16px;
     font-weight: bold;
@@ -143,12 +185,17 @@ header {
     border-radius: 50px;
     color: rgb(0, 101, 252);
     background-color: rgb(222, 235, 255);
+    margin-left: -2px;
     font-size: 18px;
     padding-top: 15px;
 }
 
 .icon-text {
     margin-left: 10px;
+}
+
+.icon-filter:hover {
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
 }
 
 /* Information */
@@ -179,11 +226,11 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     border-radius: 15px 15px 15px 15px;
-    height: 660px;
+    height: 700px;
 }
 
 .accommodations-container {
-    width: 60%;
+    width: 63%;
     background-color: rgb(242, 242, 242);
     border-radius: 25px 25px 25px 25px;
     height: 100%;
@@ -193,7 +240,7 @@ header {
     background: rgb(242, 242, 242);
     border-radius: 15px 15px 0px 0px;
     border: solid rgb(242, 242, 242);
-    padding-bottom: -5px;
+    padding-bottom: 0px;
 }
 
 .title-text {
@@ -206,17 +253,17 @@ header {
 .accommodations-row {
     background: rgb(242, 242, 242);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 10px 25px 10px 25px;
     align-content: center;
+    padding-bottom: 22px;
 }
 
 .accommodations-card {
     background: rgb(255, 255, 255);
-    width: 255px;
-    height: 220px;
-    margin: 10px;
+    width: 290px;
+    height: 230px;
+    margin: 15px;
     border-radius: 16px 16px 16px 16px;
     padding: 5px 5px 0px 5px;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
@@ -243,11 +290,14 @@ header {
 .blue-star {
     color: rgb(0, 101, 252);
     font-size: 14px;
+    padding-top: 7px;
 }
 
 .gray-star {
     color: rgb(228, 227, 227);
     font-size: 14px;
+    padding-top: 7px;
+
 }
 
 
@@ -256,7 +306,6 @@ header {
     font-size: 18px;
     background-color: rgb(242, 242, 242);
     padding-left: 50px;
-    border-radius: 0px 0px 0px 25px;
 }
 
 .show-more:hover {
@@ -272,7 +321,7 @@ header {
     height: 100%;
     background-color: #f2f2f2;
     border-radius: 25px 25px 25px 25px;
-    gap: 15px;
+    gap: 30px;
 }
 
 .popular-row {
@@ -280,8 +329,8 @@ header {
     width: 100%;
     justify-content: space-between;
     background-color: #f2f2f2;
-    justify-content: center;
-    padding-top: 20px;
+    justify-content: center;ß
+    padding-top: 5px;
 }
 
 .aside-title {
@@ -290,6 +339,7 @@ header {
     justify-content: space-between;
     font-size: 22px;
     padding-left: 20px;
+    margin-bottom: -2px;
 }
 
 .black-star {
@@ -301,16 +351,16 @@ header {
 
 .popular-card {
     display: flex;
-    width: 400px;
-    height: 150px;
+    width: 430px;
+    height: 160px;
     border-radius: 16px 16px 16px 16px;
     cursor: pointer;
-    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(107, 95, 95, 0.2);
 }
 
 .popular-img {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     border-radius: 16px 0px 0px 16px;
     margin: 5px;
     object-fit: cover; 
