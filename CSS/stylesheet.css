@@ -1,7 +1,6 @@
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
     color: black;
     font-size: 16px;
 }
@@ -46,7 +45,6 @@ header {
     margin-right: 40px;
 }
 
-
 .navbar-li {
     font-size: 16px;
     margin: 0 15px;
@@ -63,54 +61,16 @@ header {
     text-decoration: none;
 }
 
-@media (max-width: 992px) {
-    .navacc-active, .navact-active {
-        padding: 40px 0px 0px 0px;
-        border-top: none;
-        border-bottom: 2px solid transparent;
-    }
-    
-    .navacc-active:hover, .navact-active:hover {
-        color: rgb(0, 101, 252);
-        border-color: rgb(0, 101, 252);
-        text-decoration: none;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        height: 100px;
-        padding: 10px 10px 10px 55px;
-    }
-
-    .logo {
-        width: 100px;
-        height: 47px;
-    }
- 
-    .navacc-active, .navact-active {
-        padding: 40px 0px 0px 0px;
-        border-top: none;
-        border-bottom: 2px solid transparent;
-    }
-    
-    .navacc-active:hover, .navact-active:hover {
-        color: rgb(0, 101, 252);
-        border-color: rgb(0, 101, 252);
-        text-decoration: none;
-    }
-}
 
 /* Search bar */
+
 .find-place {
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .downtown-nature{
-    margin-top: 12px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -122,7 +82,7 @@ header {
 .search {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 24%;
     padding: 20px 0 15px 0;
 }
 
@@ -139,6 +99,7 @@ header {
     border-top: 1px solid rgb(242, 242, 242);
     padding: 5px;
     font-weight: 700;
+    width: 100%;
 }
 
 .search-button {
@@ -199,6 +160,7 @@ header {
 }
 
 /* Information */
+
 .information {
     display: flex;
     align-items: baseline;
@@ -224,7 +186,6 @@ header {
 .accommodations-most-popular {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     border-radius: 15px 15px 15px 15px;
     height: 700px;
 }
@@ -311,6 +272,7 @@ header {
 .show-more:hover {
     color: #0065fc;
 }
+
 /* Most popular section */
 
 .most-popular {
@@ -346,7 +308,7 @@ header {
     font-size: 18px;
     padding-right: 50px;
     padding-top: 20px;
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242);
 }
 
 .popular-card {
@@ -356,6 +318,7 @@ header {
     border-radius: 16px 16px 16px 16px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(107, 95, 95, 0.2);
+    background-color: rgb(255, 255, 255);
 }
 
 .popular-img {
@@ -416,6 +379,7 @@ header {
     border-radius: 16px 16px 0px 0px;
     object-fit: cover;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .activities-text {
@@ -426,6 +390,8 @@ header {
     margin-top: -4px;
     padding-left: 20px;
     font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
 }
 
 .card-column {
@@ -447,6 +413,7 @@ header {
     border-radius: 16px 16px 0px 0px;
     object-fit: cover;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .activities-smimg2 {
@@ -455,6 +422,7 @@ header {
     border-radius: 16px 16px 0px 0px;
     object-fit: cover;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .padding-img2 {
@@ -467,6 +435,7 @@ header {
     border-radius: 16px 16px 0px 0px;
     object-fit: cover;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .activities-smimg4 {
@@ -475,6 +444,7 @@ header {
     border-radius: 16px 16px 0px 0px;
     object-fit: cover;
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .padding-img4 {
@@ -490,27 +460,151 @@ header {
     padding: 20px 0px 20px 50px;
 }
   
-.footer-column {
-    background-color: rgb(242, 242, 242);
-}
-  
 .footer-title {
-    background-color: rgb(242, 242, 242);
     font-size: 18px;
 }
 
 .footer-links {
-    background-color: #f2f2f2;
     list-style-type: none;
     padding-left: 0px;
 }
 
 .footer-links > li {
-    background-color: #f2f2f2;
     padding: 5px;
 }
   
-  
   /* Media query tablet */
-  /* Media query mobile */
+
+  @media (max-width: 992px) {
+  }
+
+
+
+    /* Media query mobile */
+
+  @media (max-width: 768px) {
+
+    main {
+        padding: 4px 20px 30px 20px;
+    }
+    
+    /* Header & navbar */
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+        margin-bottom: 30px;
+        border: solid blue;
+    }
+
+    nav {
+        border: red solid;
+    }
+
+    .navbar-li {
+        align-content: center;
+        border-bottom-color: grey;
+    }
+ 
+    .logo {
+        margin-left: 80px;
+    }
+
+    .navacc-active, .navact-active {
+        border-top: none;
+        border-bottom: 2px solid transparent
+    }
+    
+    .navacc-active:hover, .navact-active:hover {
+        color: rgb(0, 101, 252);
+        border-color: rgb(0, 101, 252);
+        text-decoration: none;
+    }
+
+    /* Search bar */
+
+    .search {
+        width: 100%;
+    }
+
+    .search-button::before {
+        display: inline-block;
+        background-color: #0065fc;
+        border: 1px solid #fc00c1;
+        border-radius: 12px 12px 12px 12px;
+        padding: 12px;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f002";
+    }
+
+    .search-button {
+        background-color: white;
+        border-color: rgb(29, 170, 69);
+        width: 5px;
+        height: 5px;
+    }
+
+
+    /* Filter */
+
+
+    /* i icon */
+
+    .fa-info {
+        height: 25px;
+        width: 25px;
+        border: 2px solid rgb(242, 242, 242);
+        color: rgb(0, 101, 252);
+        padding-top: 3px;
+        padding-left: 8px;
+        padding-right: 7px;
+        font-size: 14px;
+    }
+
+    /* Accommodations & Most popular sections */
+
+    .accommodations-most-popular {
+        height: 2500px;
+        flex-direction: column-reverse;
+    }
+
+    .accommodations-container {
+        width: 100%;
+        background-color: white;
+    }
+
+    .sections-title, .title-text, .accommodations-row {
+        background-color: white;
+        border: white;
+    }
+
+    .show-more {
+        background-color: white;
+        padding: 15px;
+    }
+
+    .most-popular {
+        width: 100%;
+    }
+
+    /* Activities section */
+
+
+    /* Footer */
+
+    .container-footer {
+        flex-direction: column;
+        border: blue;
+    }
+
+    .footer-links > li {
+        padding: 0px;
+    }
+}
   
