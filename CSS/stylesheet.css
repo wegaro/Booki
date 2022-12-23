@@ -108,9 +108,12 @@ header {
     border: 1px solid #0065fc;
     border-radius: 0px 12px 12px 0px;
     padding: 12px;
-    color: white;
     cursor: pointer;
     font-weight: 600;
+}
+
+.search-text {
+    color: white;
 }
 
 /* Filter */
@@ -166,6 +169,7 @@ header {
     align-items: baseline;
     gap: 10px;
     padding: 18px 0 20px 0;
+    width: 28%;
 }
 
 .fa-info {
@@ -244,6 +248,11 @@ header {
     padding-left: 12px;
 }
 
+h5 {
+    font-size: 18px;
+
+}
+
 .price {
     font-weight: 600;
 }
@@ -291,7 +300,7 @@ header {
     width: 100%;
     justify-content: space-between;
     background-color: #f2f2f2;
-    justify-content: center;ß
+    justify-content: center;
     padding-top: 5px;
 }
 
@@ -331,7 +340,18 @@ header {
 
 .popular-text {
     padding-left: 12px;
-    line-height: 1px;
+    line-height: 0;
+}
+
+.title-line2 {
+    height: 30%;
+    width: 90%;
+    margin-top: -10px;
+    line-height: 170%;
+}
+
+.night-text {
+    padding-top: 5px;
 }
 
 .popular-stars {
@@ -485,6 +505,10 @@ header {
   @media (max-width: 768px) {
 
     main {
+        padding: 0
+    }
+
+    .main-query {
         padding: 4px 20px 30px 20px;
     }
     
@@ -492,23 +516,17 @@ header {
 
     header {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         height: 100px;
         margin-bottom: 30px;
-        border: solid blue;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px 20px 20px;
     }
 
-    nav {
-        border: red solid;
-    }
-
-    .navbar-li {
-        align-content: center;
-        border-bottom-color: grey;
-    }
- 
-    .logo {
-        margin-left: 80px;
+    li {
+        padding: 10px 30px 15px 40px;
+        border-bottom: solid rgb(128, 128, 128, 0.2);
     }
 
     .navacc-active, .navact-active {
@@ -518,22 +536,24 @@ header {
     
     .navacc-active:hover, .navact-active:hover {
         color: rgb(0, 101, 252);
-        border-color: rgb(0, 101, 252);
+        border-bottom-color: rgb(0, 101, 252);
         text-decoration: none;
     }
 
     /* Search bar */
+    
+    .downtown-nature, .find-place {
+        padding-top: 10px;
+    }
 
     .search {
         width: 100%;
+        padding-top: 35px;
     }
 
     .search-button::before {
-        display: inline-block;
         background-color: #0065fc;
-        border: 1px solid #fc00c1;
-        border-radius: 12px 12px 12px 12px;
-        padding: 12px;
+        padding: 5px;
         font-style: normal;
         font-variant: normal;
         text-rendering: auto;
@@ -544,10 +564,15 @@ header {
     }
 
     .search-button {
-        background-color: white;
-        border-color: rgb(29, 170, 69);
-        width: 5px;
-        height: 5px;
+        color: white;
+        background-color: #0065fc;
+        padding: 9px;
+        border-radius: 13px 13px 13px 13px;
+        margin-left: -18px;
+    }
+
+    .search-text {
+        display: none;
     }
 
 
@@ -555,6 +580,10 @@ header {
 
 
     /* i icon */
+
+    .information {
+        width: 100%;
+    }
 
     .fa-info {
         height: 25px;
@@ -570,7 +599,7 @@ header {
     /* Accommodations & Most popular sections */
 
     .accommodations-most-popular {
-        height: 2500px;
+        height: 2100px;
         flex-direction: column-reverse;
     }
 
@@ -579,32 +608,166 @@ header {
         background-color: white;
     }
 
-    .sections-title, .title-text, .accommodations-row {
+
+    .title-text {
+        background-color: white;
+        padding-left: 16px;
+    }
+
+    .sections-title, .accommodations-row {
         background-color: white;
         border: white;
+        }
+
+    .accommodations-card {
+        width: 95%;
+        height: 205px;
+    }
+
+    .accommodations-img {
+        width: 100%;
+        height: 110px;
+    }
+
+    .card-subtitle {
+        margin-top: -3px;
+    }
+
+    .text-position {
+        margin-top: -10px;
+        padding-left: 12px;
+    }
+
+    .blue-star, .gray-star {
+        margin-top: -3px;
     }
 
     .show-more {
         background-color: white;
-        padding: 15px;
+        padding: 19px;
     }
 
     .most-popular {
         width: 100%;
+        border-radius: 0;
+        height: 900px;
+    }
+
+    .aside-title {
+        padding-left: 3px;
+    }
+    
+    .black-star {
+        padding-right: 9px;
+    }
+
+    .popular-card {
+        width: 320px;
+        height: 145px;
+    }
+
+    .popular-img {
+        width: 125px;
+        height: 135px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    .popular-text {
+        padding-left: 12px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    .night-text {
+        padding-top: 6px;
+    }    
+
+    .popular-stars {
+        padding-top: 40px;
+    }
+    
+    .popular-stars-line2 {
+        padding-top: 13px;
+    }
+
+    .blue-star, .gray-star {
+        font-size: 12px;
     }
 
     /* Activities section */
+
+    .activities-container {
+        padding: 4px 20px 30px 20px;
+    }
+
+    .activities-title {
+        padding-top: 30px;
+    }
+
+    .big-container {
+        flex-direction: column;
+        width: 100%;
+        height: 1350px;
+    }
+
+    .card-row {
+        padding-top: 30px;
+        width: 100%;
+        height: 135px;
+    }
+
+    .activities-bigimg {
+        height: 135px;
+    }
+
+    .activities-text {
+        width: 100%;
+        height: 50px;
+        padding-top: 15px;
+    }
+
+    .card-column {
+        padding-top: 40px;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .card-rowsm {
+        height: 400px;
+    }
+
+    .activities-smimg1 {
+        height: 135px;
+    }
+
+    .activities-smimg2 {
+        height: 135px;
+    }
+
+    .activities-smimg3 {
+        height: 135px;
+    }
+
+    .activities-smimg4 {
+        height: 135px;
+    }
 
 
     /* Footer */
 
     .container-footer {
         flex-direction: column;
-        border: blue;
     }
 
-    .footer-links > li {
-        padding: 0px;
+    .footer-title {
+        margin-left: -20px;
+    }
+    .footer-link {
+        padding: 6px 6px 6px 0px;
+        margin-left: -20px;
+        border: none;
     }
 }
   

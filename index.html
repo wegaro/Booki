@@ -6,7 +6,7 @@
   <title>Booki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" href="css/stylesheet.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,7 @@
   
 <main>
   <!-- Search bar -->
+  <div class="main-query">
     <h3 class="find-place">Find a place for your dream vacation</h3>
     <p class="downtown-nature">Downtown or in nature</p>
     <div class="search">
@@ -34,7 +35,7 @@
           <i class="fa-solid fa-location-dot"></i>
         </div>
         <input class="text-box" type="text" placeholder="Marseille, France">
-        <button class="search-button" type="submit">Search</button>
+        <button class="search-button" type="submit"><span class="search-text">Search</span></button>
       </form>
     </div>
 
@@ -58,8 +59,9 @@
   <!-- "i" icon / text -->
     <div class="information">
       <i class="fa-solid fa-info"></i>
-      <p>More than 500 accommodations are available in this city</p>
+        <p>More than 500 accommodations are available in this city</p>
     </div>
+  </div>
 
   <!-- Accommodations section -->
   <section id="accommodations" class="accommodations-most-popular">
@@ -72,8 +74,8 @@
           <div class="accommodations-card">
             <img class="accommodations-img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
             <div class="text-position">
-              <h5 class="card-title">Auberge la Cannebière</h5>
-              <p class="card-sub-title">Night starting at <span class="price">25€</span></p>
+              <h5>Auberge la Cannebière</h5>
+              <p class="card-subtitle">Night starting at <span class="price">25€</span></p>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
@@ -86,7 +88,7 @@
             <img class="accommodations-img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
             <div class="text-position">
               <h5>Hôtel du port</h5>
-              <p>Night starting at <span class="price">52€</span></p>
+              <p class="card-subtitle">Night starting at <span class="price">52€</span></p>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
@@ -99,7 +101,7 @@
             <img class="accommodations-img" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
             <div class="text-position">
               <h5>Les mouettes Hotel</h5>
-              <p>Night starting at <span class="price">76€</span></p>
+              <p class="card-subtitle">Night starting at <span class="price">76€</span></p>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
@@ -115,7 +117,7 @@
             <img class="accommodations-img" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
             <div class="text-position">
               <h5>Hôtel de la mer</h5>
-              <p>Night starting at <span class="price">46€</span></p>
+              <p class="card-subtitle">Night starting at <span class="price">46€</span></p>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
@@ -128,7 +130,7 @@
             <img class="accommodations-img" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
             <div class="text-position">
             <h5>Auberge Le Panier</h5>
-            <p>Night starting at <span class="price">23€</span></p>
+            <p class="card-subtitle">Night starting at <span class="price">23€</span></p>
             <i class="fa-solid fa-star blue-star"></i>
             <i class="fa-solid fa-star blue-star"></i>
             <i class="fa-solid fa-star blue-star"></i>
@@ -141,7 +143,7 @@
             <img class="accommodations-img" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chew Amina">
             <div class="text-position">
               <h5>Hôtel chew Amina</h5>
-              <p>Night starting at <span class="price">96€</span></p>
+              <p class="card-subtitle">Night starting at <span class="price">96€</span></p>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
               <i class="fa-solid fa-star blue-star"></i>
@@ -184,15 +186,16 @@
       <div class="popular-card">
         <img class="popular-img" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Bed and Breakfast">
         <div class="popular-text">
-          <h5>Au cœur de l'eau Bed</h5>
-          <h5 class="second-line-text">and Breakfast</h5>
-          <p>Night starting at <span class="price">128€</span></p>
+          <div class="title-line2">
+          <h5>Au cœur de l'eau Bed and Breakfast</h5>
+          </div>
+          <p class="night-text">Night starting at <span class="price">71€</span></p>
           <div class="popular-stars-line2">
             <i class="fa-solid fa-star blue-star"></i>
             <i class="fa-solid fa-star blue-star"></i>
             <i class="fa-solid fa-star blue-star"></i>
             <i class="fa-solid fa-star blue-star"></i>
-            <i class="fa-solid fa-star blue-star"></i>
+            <i class="fa-solid fa-star gray-star"></i>
           </div>
         </div>
         </div>
@@ -204,14 +207,15 @@
       <div class="popular-card">
         <img class="popular-img" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout bleu et Blanc Hotel">
         <div class="popular-text">
-          <h5>Tout bleu et Blanc Hotel</h5>
-          <p>Night starting at <span class="price">128€</span></p>
-          <div class="popular-stars">
+          <h5>Tout bleu et Blanc</h5>
+          <h5 class="second-line-text"> Hotel</h5>
+          <p>Night starting at <span class="price">68€</span></p>
+          <div class="popular-stars-line2">
             <i class="fa-solid fa-star blue-star"></i>
             <i class="fa-solid fa-star blue-star"></i>
             <i class="fa-solid fa-star blue-star"></i>
             <i class="fa-solid fa-star blue-star"></i>
-            <i class="fa-solid fa-star blue-star"></i>
+            <i class="fa-solid fa-star gray-star"></i>
           </div>
         </div>
         </div>
@@ -277,25 +281,25 @@
   <div class="footer-column">
     <h4 class="footer-title">About</h4>
     <ul class="footer-links">
-      <li><a href="#">Map</a></li>
-      <li><a href="#">General Terms and Conditions</a></li>
-      <li><a href="#">Data Privacy</a></li>
+      <li class="footer-link"><a href="#">Map</a></li>
+      <li class="footer-link"><a href="#">General Terms and Conditions</a></li>
+      <li class="footer-link"><a href="#">Data Privacy</a></li>
     </ul>
   </div>
 
   <div class="footer-column">
     <h4 class="footer-title">Our Accommodations</h4>
     <ul class="footer-links">
-      <li><a href="#">Quality Assessment</a></li>
-      <li><a href="#">You have a hotel?</a></li>
+      <li class="footer-link"><a href="#">Quality Assessment</a></li>
+      <li class="footer-link"><a href="#">You have a hotel?</a></li>
     </ul>
   </div>
   
   <div class="footer-column">
     <h4 class="footer-title">Assistance</h4>
     <ul class="footer-links">
-      <li><a href="#">Help Desk</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li class="footer-link"><a href="#">Help Desk</a></li>
+      <li class="footer-link"><a href="#">Contact Us</a></li>
     </ul>
   </div>
   </div> 
