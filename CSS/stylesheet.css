@@ -289,6 +289,11 @@ h5 {
     color: #0065fc;
 }
 
+.accommodations-card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
 /* Most popular section */
 
 .most-popular {
@@ -372,6 +377,11 @@ h5 {
 
 .popular-stars-line2 {
     padding-top: 20px;
+}
+
+.popular-card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
 
 
@@ -483,6 +493,11 @@ h5 {
 
 .padding-img4 {
     padding-top: 25px;
+}
+
+.card-row:hover, .card-rowsm:hover, .card-column:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
 
 /* Footer */
